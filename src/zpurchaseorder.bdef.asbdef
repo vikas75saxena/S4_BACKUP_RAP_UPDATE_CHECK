@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_purchaseorder unique;
+strict ( 2 );
+
+define behavior for ZPURCHASEORDER //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  update;
+  field (readonly:update) PurchaseOrder;
+  event SalesPersonIdChanged parameter ZPURORD_EVENT;
+
+}

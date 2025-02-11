@@ -1,0 +1,16 @@
+CLASS zcl_po_event_consumption DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR EVENTS OF zpurchaseorder
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcl_po_event_consumption IMPLEMENTATION.
+ENDCLASS.

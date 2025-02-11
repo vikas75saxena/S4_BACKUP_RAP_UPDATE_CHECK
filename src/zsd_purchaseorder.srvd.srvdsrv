@@ -1,0 +1,4 @@
+@EndUserText.label: 'PO Service'
+define service ZSD_PURCHASEORDER {
+  expose ZC_PURCHASEORDER;
+}
